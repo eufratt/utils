@@ -76,5 +76,5 @@ def konversi_suhu(nilai, dari, ke):
       temp = (nilai - 273.15) * 9 / 5 + 32
     if ke == 'K' and temp < 0:
         return 'error'
-    else : 
+    else: 
         return temp
