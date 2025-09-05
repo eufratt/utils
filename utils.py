@@ -74,4 +74,6 @@ def konversi_suhu(nilai, dari, ke):
       temp = nilai - 273.15
     elif dari == 'K' and ke == 'F':
       temp = (nilai - 273.15) * 9 / 5 + 32
-    return temp
+    if ke == 'K' and temp < 0:
+        return 'error'
+     return temp
