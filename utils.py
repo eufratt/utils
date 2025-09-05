@@ -62,18 +62,20 @@ def konversi_suhu(nilai, dari, ke):
     temp = 0
     if dari == 'K' and nilai < 0:
         return 'error'
+    
     if dari == 'C' and ke == 'F' :
-      temp = (nilai * 9 /5) + 32
+        temp = (nilai * 9 /5) + 32
     elif dari == 'C' and ke == 'K' :
-      temp = nilai + 273.15
+        temp = nilai + 273.15
     elif dari == 'F' and ke == 'C':
-      temp = (nilai - 32) * 5 / 9
+        temp = (nilai - 32) * 5 / 9
     elif dari == 'F' and ke == 'K':
-      temp = (nilai - 32) * 5 / 9 + 273.15
+        temp = (nilai - 32) * 5 / 9 + 273.15
     elif dari == 'K' and ke == 'C':
-      temp = nilai - 273.15
+        temp = nilai - 273.15
     elif dari == 'K' and ke == 'F':
-      temp = (nilai - 273.15) * 9 / 5 + 32
+        temp = (nilai - 273.15) * 9 / 5 + 32
+    
     if ke == 'K' and temp < 0:
         return 'error'
     else: 
