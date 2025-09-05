@@ -60,6 +60,8 @@ def nilai_minimum(a, b):
 
 def konversi_suhu(nilai, dari, ke):  
     temp = 0
+    if dari == 'K' and nilai < 0:
+        return 'error'
     if dari == 'C' and ke == 'F' :
       temp = (nilai * 9 /5) + 32
     elif dari == 'C' and ke == 'K' :
