@@ -57,3 +57,19 @@ def nilai_maksimum(a, b):
 
 def nilai_minimum(a, b):
     return min(a, b)
+
+def konversi_suhu(nilai, dari, ke):  
+    temp = 0
+    if dari == 'C' and ke == 'F' :
+      temp = (nilai * 9 /5) + 32
+    elif dari == 'C' and ke == 'K' :
+      temp = nilai + 273.15
+    elif dari == 'F' and ke == 'C':
+      temp = (nilai - 32) * 5 / 9
+    elif dari == 'F' and ke == 'K':
+      temp = (nilai - 32) * 5 / 9 + 273.15
+    elif dari == 'K' and ke == 'C':
+      temp = nilai - 273.15
+    elif dari == 'K' and ke == 'F':
+      temp = (nilai - 273.15) * 9 / 5 + 32
+    return temp
